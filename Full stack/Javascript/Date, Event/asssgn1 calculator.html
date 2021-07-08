@@ -1,0 +1,29 @@
+<html>
+<head>
+<table border="1px" cellspacing="0px" height="30%" width="50%" cellpadding="10px"><tr> <td> 
+<h1 align="center"> CALCULATOR </h1>
+</head>
+<body>
+<script>
+function add(){F1.t3.value=Number(F1.t1.value)+Number(F1.t2.value);}
+function sub(){F1.t3.value=Number(F1.t1.value)-Number(F1.t2.value);}
+function mul(){F1.t3.value=Number(F1.t1.value)*Number(F1.t2.value);}
+function div(){F1.t3.value=Number(F1.t1.value)/Number(F1.t2.value);}
+function mod(){F1.t3.value=Number(F1.t1.value)%Number(F1.t2.value);}
+</script>
+<form name="F1">
+
+<input type="text" name="t1">
+<input type="text" name="t2"></br>
+
+<input type="button" value="add" onclick="add()">
+<input type="button" value="sub" onclick="sub()">
+<input type="button" value="mul" onclick="mul()">
+<input type="button" value="div" onclick="div()">
+<input type="button" value="mod" onclick="mod()"></br>
+
+<input type="text" name="t3" >
+</td></tr></table>
+</form>
+</body>
+</html>
