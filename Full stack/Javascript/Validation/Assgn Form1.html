@@ -1,31 +1,56 @@
 <html>
 <head>
-</head>
-<body>
 <script>
-     function fun(){
-	     if( f1.name.value==f1.uname.value)
-		 {alert("Username is not same as name..");
+ function fun(){
+	let nam=f1.nam.value;
+	     if(nam==""){
+		 alert("Enter your name...");
+		 return false;}	
+	let uname=f1.uname.value;
+	     if(uname==""){
+		 alert("Enter your username...");
+		 return false;}	
+	     if(uname.length<5 || uname.length>10){
+		 alert("Username length should be in between 5 to 10...");
 		 return false;}
+	let pass=f1.password.value;
+         if(pass==""){
+		 alert("Enter your password...");
+		 return false;}	
+         if(pass.length<8 || pass.length>10){
+		 alert("Password must be in between 8 to 10...");
+		 return false;}
+    		//Uppercase letter, A=65 to Z=90. 
+    let flag=0;
+		 for(let i=0;i<pass.length;i++){
+		 if(pass.charCodeAt(i)>=65 && pass.charCodeAt(i)<=90){
+		 flag=1;
+		 }
+             if(flag==0;){
+             alert("Password must have at least one uppercase character...");
+             return false;}		 
+	     } 
 		 
-		 
-	}
+}  
 </script>
+</head>
+
+<body>
 <table border="1px" cellspacing="0px" height="50%" width="30%" > <tr> <td> 
 <frame >
 <legend align="center"> Registration Form </legend></br>
-<form name="f1" onsubmit="fun()">
-     Name:<input type="textbox" name="name" value="" > </br>
-	 Username:<input type="textbox" name="uname" value="" > </br>
-     Password:<input type="textbox" name="password" value="" > </br>
-	 Confirm-Password:<input type="textbox" name="cpassword" value="" > </br>
-	 Mobile No:<input type="textbox" name="Mob" value="" > </br>
+<form name="f1" onsubmit=" return fun()">
+     Name:<input type="text" name="nam" value="" > </br>
+	 Username:<input type="text" name="uname" value="" > </br>
+     Password:<input type="text" name="password" value="" > </br>
+	 Confirm-Password:<input type="text" name="cpassword" value="" > </br>
+	 Mobile No:<input type="text" name="Mob" value="" > </br>
 	 Gender:<input type="radio" name="g" value="" > Female
 	        <input type="radio" name="g" value="" > Male 
 			<input type="radio" name="g" value="" > Transgender</br>
 	 <p> Terms and conditions:</p>
 	 <input type="checkbox" name="tnc" value="" > I have accept all the terms and conditions.</br>
-	 <input type="button" name="Submit" value="Submit"  > </br>
+	 <input type="submit" value="Submit"  > </br>
 	 <p> <a href="">Submit another response </a> </p>
 </form>
 </frame>
