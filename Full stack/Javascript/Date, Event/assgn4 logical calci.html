@@ -1,0 +1,85 @@
+<html>
+<head>
+<script>
+function cal(val)
+    {
+        f1.cal.value+=val
+    }
+function solve()
+	{
+		let x = f1.cal.value
+		let y = eval(x)
+		f1.cal.value = y
+	}
+function clr()
+	{
+		f1.cal.value = ""
+	}
+</script>
+<style>
+.*{
+padding:0px;
+margin:0px
+}
+div{
+width:300px;
+height:515px;
+background:aqua;
+border:2px solid black;
+border-radius:10px;
+}
+h2{
+text-align:center;
+}
+#txt{
+width:296px;
+height:70px;
+background:#f2f2f2;
+border:1px solid black;
+margin-left:2px;
+}
+#btn{
+width:50px;
+height:50px;
+background:#f2f2f2;
+border:1px solid black;
+margin:10px;
+font-size:20px;
+}
+</style>
+</head>
+
+<body>
+<div >
+<h2> CALCULATOR</h2>
+<form name="f1">
+<input id="txt" type="text" name="cal" ></br><br>
+
+<input id="btn" type="button" value="SP" onclick="">
+<input id="btn" type="button" value="%" onclick="cal('%')">
+<input id="btn" type="button" value="/" onclick="cal('/')">
+<input id="btn" type="button" value="C" onclick="clr()"></br>
+
+<input id="btn" type="button" value="7" onclick="cal('7')">
+<input id="btn" type="button" value="8" onclick="cal('8')">
+<input id="btn" type="button" value="9" onclick="cal('9')">
+<input id="btn" type="button" value="+" onclick="cal('+')"></br>
+
+<input id="btn" type="button" value="4" onclick="cal('4')">
+<input id="btn" type="button" value="5" onclick="cal('5')">
+<input id="btn" type="button" value="6" onclick="cal('6')">
+<input id="btn" type="button" value="-" onclick="cal('-')"></br>
+
+<input id="btn" type="button" value="1" onclick="cal('1')">
+<input id="btn" type="button" value="2" onclick="cal('2')">
+<input id="btn" type="button" value="3" onclick="cal('3')">
+<input id="btn" type="button" value="*" onclick="cal('*')"></br>
+
+<input id="btn" type="button" value="00" onclick="cal('00')">
+<input id="btn" type="button" value="0" onclick="cal('0')">
+<input id="btn" type="button" value="." onclick="cal('.')">
+<input id="btn" type="button" value="=" onclick="solve()">
+</form>
+</div>
+</body>
+</html>
