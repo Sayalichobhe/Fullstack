@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+let n=757;
+let temp=n;
+let rev=0;
+while(n>0){
+let a=n%10; // a is remainder
+rev=rev*10+a;
+n=Math.floor(n/10); //math.floor is used to access round figure nr from decimal nr, eg if we have 1.2 , it only gives 1 to system.
+}
+//document.write(rev);
+if(temp==rev){
+document.write("Palindrome number "+temp);
+}
+else {
+document.write("Not palindrome number "+temp);
+}
+</script>
+</head>
+<body>
+</body>
+</html>
