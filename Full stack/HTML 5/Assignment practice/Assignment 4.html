@@ -1,0 +1,72 @@
+<! DOCTYPE html>
+<html>
+<head>
+<style>
+    *{padding:0px;margin:0px;}
+    article{width:400px;height:620px;background:#619C26;margin:auto;margin-top:10px;border-radius:5px;}
+	table{width:320px;margin-left:40px;}
+	h2{margin-left:40px;padding:5px;}
+	#h1{padding-top:20px;}
+	input{height:25px;}
+	.i1{margin-left:60px;}
+	textarea{margin-left:50px;}
+	.i2{margin-left:38px;}
+	.i3{margin-left:52px;}
+	.i4{margin-left:22px;}
+	.i5{margin-left:20px;}
+	.i6{margin-left:20px;}
+	td{background:#D7EEA0;border-radius:5px;padding:6px;}
+	#i7{background:black;color:white;border-radius:10px;width:80px;height:30px;margin-left:160px;margin-top:5px;}
+	
+</style>
+</head>
+<body>
+<article>
+<form action="">
+	<h2 id="h1"> Step 1: Your Details</h2>
+	<table  >
+		<tr>
+		    <td id="t1"> Name <input class="i1" type="text" name="nam" placeholder="Enter your name"> </td>
+		</tr>
+		<tr>
+		    <td> Email <input class="i1" type="email" name="email" placeholder="Enter your email"></td>
+		</tr>
+		<tr>
+		    <td> Phone <input class="i1" type="number" name="phone" placeholder="eg:8999232535"></td>
+		</tr>
+    </table>
+	<h2> Step 2: Delivery Address</h2>
+	<table >
+		<tr>
+		    <td> Address <textarea rows="3" cols="22" name="address"> </textarea> </td>
+		</tr>
+		<tr>
+		    <td> Post Code <input class="i2" type="number" name="postcode"> </td>
+		</tr>
+		<tr>
+		    <td> Country <input class="i3" type="text" name="country"> </td>
+		</tr>
+    </table>
+	<h2> Step 3: Card Details</h2>
+	<table >
+		<tr>
+		    <td colspan="2"> Card type  </br>
+			<input class="i6" type="radio" name="c"> VISA 
+			<input class="i6" type="radio" name="c"> RuPay 
+			<input class="i6" type="radio" name="c"> Mastercard </td>
+		</tr>
+		<tr>
+		    <td> Card Number <input class="i4" type="number" name="cardno."> </td>
+		</tr>
+		<tr>
+		    <td> 	Security Code <input class="i5" type="password" name="security code"> </td>
+		</tr>
+		<tr>
+		    <td> 	Name on card <input class="i4" type="text" name="name on card" placeholder="Enter name as per adhaar card"> </td>
+		</tr>
+    </table>
+    <input id="i7" type="submit" name="submit" value="BUY IT!">
+	</article>
+</form>
+</body>
+</html>
