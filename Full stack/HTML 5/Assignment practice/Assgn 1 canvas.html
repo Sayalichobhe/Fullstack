@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+  <body>
+    <canvas id="myCanvas" width="600" height="600" style="border:2px solid"></canvas>
+    <script>
+      let canvas = document.getElementById('myCanvas');
+      let context = canvas.getContext('2d');
+      let x = canvas.width / 2;
+      let y = canvas.height / 2;
+      let radius = 200;
+      let startAngle = 0 * Math.PI;
+      let endAngle = 2 * Math.PI;
+      let counterClockwise = false;
+      context.beginPath();
+      context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+      context.lineWidth = 2;      
+      context.strokeStyle = 'black';
+      context.stroke();
+      
+	  
+	  context.beginPath();
+      context.moveTo(0, 200);
+      context.lineTo(126,200);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(0, 400);
+      context.lineTo(126,400);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(600, 200);
+      context.lineTo(474,200);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(600,400);
+      context.lineTo(474,400);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(200,0);
+      context.lineTo(200,126);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(400,0);
+      context.lineTo(400,126);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(200,600);
+      context.lineTo(200,474);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(400,600);
+      context.lineTo(400,474);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(300, 100);
+      context.lineTo(300,500);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(100,300);
+      context.lineTo(500,300);
+      context.stroke();
+    </script>
+  </body>
+</html>
