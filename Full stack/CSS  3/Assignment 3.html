@@ -1,0 +1,63 @@
+<html>
+<head>
+    <style>
+	.outer{
+	    width:1200px;
+		height:400px;
+		background:black;
+		position:relative;
+		margin-left:50px;
+	}
+	.balll{
+	    width:100px;
+		height:100px;
+		background:red;
+		position:absolute;
+		border-radius:50%;
+        animation:myanimationl 2s infinite ;
+		 -webkit-animation:myanimationl 2s infinite  ;
+		 -moz-animation:myanimationl 2s infinite ;
+		 -o-animation:myanimationl 2s infinite ;
+		 -ms-animation:myanimationl 2s infinite ;		
+	}
+	@keyframes myanimationl{
+	    0%{left:0px;top:150px;}
+		50%{left:550px;top:150px;}
+		100%{left:0px;top:150px;}		
+	}
+	@ -webkit-keyframes myanimationl{
+		0%{left:0px;top:150px;}
+		50%{left:550px;top:150px;}
+		100%{left:0px;top:150px;}		
+	}
+	.ballr{
+	    width:100px;
+		height:100px;
+		background:white;
+		position:absolute;
+		border-radius:50%;	
+        animation:myanimationr 2s infinite;
+		 -webkit-animation:myanimationr 2s infinite  ;
+		 -moz-animation:myanimationr 2s infinite ;
+		 -o-animation:myanimationr 2s infinite ;
+		 -ms-animation:myanimationr 2s infinite ;		
+	}
+	@keyframes myanimationr{
+	    0%{left:1100px;top:150px;}
+		50%{left:550px;top:150px;}
+		100%{left:1100px;top:150px;}		
+	}
+	@ -webkit-keyframes myanimationr{
+		0%{left:1100px;top:150px;}
+		50%{left:550px;top:150px;}
+		100%{left:1100px;top:150px;}	
+	}
+    </style>
+</head>
+<body> 
+    <div class="outer">
+	<div class="balll"></div>
+	<div class="ballr"></div>
+	</div>
+</body>
+</html>
