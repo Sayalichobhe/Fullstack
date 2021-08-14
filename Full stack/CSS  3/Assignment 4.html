@@ -1,0 +1,65 @@
+<html>
+<head>
+    <style>
+	.outer{
+	    width:1200px;
+		height:400px;
+		background:black;
+		position:relative;
+		margin-left:50px;
+	}
+	.balll{
+	    width:100px;
+		height:100px;
+		position:absolute;
+		border-radius:50%;		
+	}
+	.outer:hover .balll{
+	     animation:myanimationl 2s ;
+		 -webkit-animation:myanimationl 2s ;
+		 -moz-animation:myanimationl 2s ;
+		 -o-animation:myanimationl 2s ;
+		 -ms-animation:myanimationl 2s ;
+	}
+	@keyframes myanimationl{
+	    0%{background:red;left:0px;top:150px;}
+		50%{background:red;left:550px;top:150px;}
+		100%{background:red;left:0px;top:150px;}		
+	}
+	@ -webkit-keyframes myanimationl{
+		0%{background:red;left:0px;top:150px;}
+		50%{background:red;left:550px;top:150px;}
+		100%{background:red;left:0px;top:150px;}		
+	}
+	.ballr{
+	    width:100px;
+		height:100px;
+		position:absolute;
+		border-radius:50%;	
+    }
+    .outer:hover .ballr{
+	     animation:myanimationr 2s ;
+		 -webkit-animation:myanimationr 2s ;
+		 -moz-animation:myanimationr 2s ;
+		 -o-animation:myanimationr 2s ;
+		 -ms-animation:myanimationr 2s ;
+	}
+	@keyframes myanimationr{
+	    0%{background:white;left:1100px;top:150px;}
+		50%{background:white;left:550px;top:150px;}
+		100%{background:white;left:1100px;top:150px;}		
+	}
+	@ -webkit-keyframes myanimationr{
+		0%{background:white;left:1100px;top:150px;}
+		50%{background:white;left:550px;top:150px;}
+		100%{background:white;left:1100px;top:150px;}	
+	}
+    </style>
+</head>
+<body> 
+    <div class="outer">
+	<div class="balll"></div>
+	<div class="ballr"></div>
+	</div>
+</body>
+</html>
