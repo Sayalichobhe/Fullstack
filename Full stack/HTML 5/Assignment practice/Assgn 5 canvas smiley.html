@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+  <body>
+    <canvas id="myCanvas" width="600" height="600" style="border:2px solid"></canvas>
+    <script>
+      let canvas = document.getElementById('myCanvas');
+      let context = canvas.getContext('2d');
+      let x = canvas.width / 2;
+      let y = canvas.height / 2;
+      let radius = 200;
+      let startAngle = 0 * Math.PI;
+      let endAngle = 2 * Math.PI;
+      let counterClockwise = false;
+      context.beginPath();
+      context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+      context.lineWidth = 2;      
+      context.strokeStyle = 'black';
+      context.stroke();	  
+	  
+      context.beginPath();
+      context.moveTo(150,225);
+      context.bezierCurveTo(175, 200, 225, 200, 250, 225);
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(350, 225);
+      context.bezierCurveTo(375, 200, 425, 200, 450, 225);
+      context.stroke();
+      
+	  let centerX1 = 200;
+      let centerY1 = 265 ;
+      let r1 = 25;
+      context.beginPath();
+      context.arc(centerX1, centerY1, r1, 0, 2 * Math.PI);
+      context.stroke();
+	  
+	  let centerX2 = 400;
+      let centerY2 = 265 ;
+      let r2 = 25;
+      context.beginPath();
+      context.arc(centerX2, centerY2, r2, 0, 2 * Math.PI);
+      context.stroke();
+
+      context.beginPath();
+      context.moveTo(300, 280);
+      context.lineTo(250, 380);
+      context.lineTo(350, 380);  
+      context.lineJoin = 'round';
+      context.stroke();
+	  
+	  context.beginPath();
+      context.moveTo(200,425);
+      context.bezierCurveTo(250, 475, 350, 475, 400, 425);
+      context.stroke();
+	  
+    </script>
+  </body>
+</html>
