@@ -1,0 +1,145 @@
+<html>
+<head>
+    <style>
+	.outer{
+	    width:700px;
+		height:600px;
+		background:grey;
+		position:relative;
+		margin:auto;
+		margin-top:20px;
+		border:2px solid;
+	}
+	.hole1{
+	    width:100px;
+		height:100px;
+		background:black;
+		position:absolute;
+		border-radius:50%;
+     }
+	 .hole2{
+	    width:100px;
+		height:100px;
+		background:black;
+		position:absolute;
+		border-radius:50%;
+		left:300px;
+     }
+	 .hole3{
+	    width:100px;
+		height:100px;
+		background:black;
+		position:absolute;
+		border-radius:50%;
+		left:600px;
+     }
+	 .ball1{
+	    width:70px;
+		height:70px;
+		background:white;
+		position:absolute;
+		border-radius:50%;
+		left:250px;
+		top:260px;
+		animation:myanimation1 2s infinite 1s;
+		 -webkit-animation:myanimation1 2s infinite 1s ;
+		 -moz-animation:myanimation1 2s infinite 1s ;
+		 -o-animation:myanimation1 2s infinite 1s;
+		 -ms-animation:myanimation1 2s infinite 1s ;
+    }	
+    @keyframes myanimation1{
+	    0%{top:260px;}
+		50%{left:15px;top:15px;}
+		100%{top:260px;}		
+	}
+	@ -webkit-keyframes myanimation1{
+		0%{top:260px;}
+		50%{left:15px;top:15px;}
+		100%{top:260px;}	
+	}		
+	.ball2{
+	    width:70px;
+		height:70px;
+		background:white;
+		position:absolute;
+		border-radius:50%;
+		left:310px;
+		top:230px;
+		animation:myanimation2 2s infinite 1s;
+		 -webkit-animation:myanimation2 2s infinite 1s ;
+		 -moz-animation:myanimation2 2s infinite 1s ;
+		 -o-animation:myanimation2 2s infinite 1s;
+		 -ms-animation:myanimation2 2s infinite 1s ;
+    }	
+    @keyframes myanimation2{
+	    0%{top:230px;}
+		50%{left:310px;top:15px;}
+		100%{top:230px;}		
+	}
+	@ -webkit-keyframes myanimation2{
+		0%{top:230px;}
+		50%{left:310px;top:15px;}
+		100%{top:230px;}	
+	}	
+	.ball3{
+	    width:70px;
+		height:70px;
+		background:white;
+		position:absolute;
+		border-radius:50%;
+		left:370px;
+		top:260px;
+		animation:myanimation3 2s infinite 1s;
+		 -webkit-animation:myanimation3 2s infinite 1s ;
+		 -moz-animation:myanimation3 2s infinite 1s ;
+		 -o-animation:myanimation3 2s infinite 1s;
+		 -ms-animation:myanimation3 2s infinite 1s ;
+    }		
+	@keyframes myanimation3{
+	    0%{top:260px;}
+		50%{left:615px;top:15px;}
+		100%{top:260px;}		
+	}
+	@ -webkit-keyframes myanimation3{
+		0%{top:260px;}
+		50%{left:615px;top:15px;}
+		100%{top:260px;}	
+	}
+	.runner{
+	    width:70px;
+		height:70px;
+		background:red;
+		position:absolute;
+		border-radius:50%;
+		left:310px;
+		top:525px;
+		animation:myanimationr 2s infinite;
+		 -webkit-animation:myanimationr 2s infinite  ;
+		 -moz-animation:myanimationr 2s infinite ;
+		 -o-animation:myanimationr 2s infinite ;
+		 -ms-animation:myanimationr 2s infinite ;
+    }		
+	@keyframes myanimationr{
+	    0%{top:525px;}
+		50%{top:295px;}
+		100%{top:525px;}		
+	}
+	@ -webkit-keyframes myanimationr{
+		0%{top:525px;}
+		50%{top:295px;}
+		100%{top:525px;}	
+	}
+    </style>
+</head>
+<body> 
+    <div class="outer">
+	<div class="hole1"></div>
+	<div class="hole2"></div>
+	<div class="hole3"></div>
+	<div class="ball1"></div>
+	<div class="ball2"></div>
+	<div class="ball3"></div>
+	<div class="runner"></div>
+	</div>
+</body>
+</html>
