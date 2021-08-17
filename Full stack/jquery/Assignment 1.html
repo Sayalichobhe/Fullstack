@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+  $(document).ready(function(){
+    $(":input").css({"border-width":"5px","margin":"10px 10px"})
+	.change(function(){$(this).css("border-color","orange");})
+	.mousedown(function(){
+	let v=$("#fn").val();
+	 $("#f1").text(v);
+	let l=$("#ln").val();
+	 $("#l1").text(l);
+	let g=$("#gl").val();
+	 $("#g1").text(g);
+	let m=$("#mn").val();
+	 $("#m1").text(m);
+	});
+});
+
+</script>
+</head>
+<body>
+<table width="500px"><tr><td>
+<form>
+<fieldset>
+<legend align="center"> Form </legend>
+fname:<input type="text" id="fn"> <span id="f1"></span><br>
+lname:<input type="text" id="ln"> <span id="l1"></span></br>
+gmail:<input type="mail" id="gl"> <span id="g1"></span></br>
+contact:<input type="number" id="mn"> <span id="m1"></span>
+</fieldset>
+</form>
+</td></tr></table>
+</body>
+</html>
