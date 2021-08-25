@@ -3,18 +3,51 @@
 <script src="jquery.js"></script>
 <script>
 $(document).ready(function(){
-    $(":input").css({"border-width":"5px","margin":"10px 10px"})
-	})
+    $(":input").css({"border-width":"3px","margin":"10px 10px"});
+	
+	$("#add").click(function(){
+	let n1=parseInt($("#f1").val());
+	let n2=parseInt($("#s1").val());
+	let rs=parseInt(n1+n2);
+	$("#res").val(rs);});
+	
+	$("#sub").click(function(){
+	let n1=parseInt($("#f1").val());
+	let n2=parseInt($("#s1").val());
+	let rs=parseInt(n1-n2);
+	$("#res").val(rs);});
+	
+	$("#mul").click(function(){
+	let n1=parseInt($("#f1").val());
+	let n2=parseInt($("#s1").val());
+	let rs=parseInt(n1*n2);
+	$("#res").val(rs);});
+	
+	$("#div").click(function(){
+	let n1=parseInt($("#f1").val());
+	let n2=parseInt($("#s1").val());
+	let rs=parseInt(n1/n2);
+	$("#res").val(rs);});
+	
+	$("#mod").click(function(){
+	let n1=parseInt($("#f1").val());
+	let n2=parseInt($("#s1").val());
+	let rs=parseInt(n1%n2);
+	$("#res").val(rs);});
+	
+	});
 </script>
 </head>
 <body>
-fno:<input type="number">
-sno:<input type="number"> </br>
-result:<input type="number"> </br>
- <input type="button" value="Add">
- <input type="button" value="Sub">
- <input type="button" value="Mul">
- <input type="button" value="Div">
- <input type="button" value="Mod">
+fno:<input type="text" id="f1">
+sno:<input type="text" id="s1"> </br>
+
+ <input type="button" value="Add" id="add">
+ <input type="button" value="Sub" id="sub">
+ <input type="button" value="Mul" id="mul">
+ <input type="button" value="Div" id="div">
+ <input type="button" value="Mod" id="mod">  </br>
+  
+ result:<input type="text" id="res">
 </body>
 </html>
