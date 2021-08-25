@@ -1,0 +1,52 @@
+
+<html>
+<head>
+    <script src="jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+	    $("#go").click(function(){
+	    $("#b1").animate({marginLeft:"1100px"},2000);
+		$("#b1").animate({marginLeft:"0px"},2000);
+	});
+	    $("#stop").click(function(){
+	    $("#b1").stop();
+	});
+	});
+	</script>
+    <style>
+	.outer{
+	    width:1200px;
+		height:400px;
+		background:black;
+		position:relative;
+		margin-left:50px;
+	}
+	.ball{
+	    width:100px;
+		height:100px;
+		background:red;
+		position:absolute;
+		border-radius:50%;
+        top:150px;
+    } 
+	input{
+        margin-top:450px;
+        width:120px;
+        height:50px;	    
+		background:black;
+		color:white;
+		font-size:35px;
+		margin-left:50px;
+		
+	}
+    </style>
+</head>
+<body> 
+    <div class="outer">
+	<div class="ball" id="b1"></div>
+	<input type="button" value="GO" id="go"> 
+	<input type="button" value="STOP" id="stop">
+	
+	</div>
+</body>
+</html>
