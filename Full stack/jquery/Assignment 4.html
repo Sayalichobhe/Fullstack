@@ -1,0 +1,57 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+	    $("#i11").click(function(){
+	    $("#i11").hide();
+		$("#i21").show();
+		});
+	    $("#i21").click(function(){
+	    $("#i21").hide();
+		$("#i11").show();
+	    });
+		$("#i12").click(function(){
+	    $("#i12").hide();
+		$("#i22").show();
+		});
+	    $("#i22").click(function(){
+	    $("#i22").hide();
+		$("#i12").show();
+	    });
+		$("#i13").click(function(){
+	    $("#i13").hide();
+		$("#i23").show();
+		});
+	    $("#i23").click(function(){
+	    $("#i23").hide();
+		$("#i13").show();
+	    });
+	});
+</script>
+<style>
+    .outer1{width:500px;height:500px;position:relative;background:black;margin-left:100px;margin-top:80px;float:left;}
+	.outer2{width:500px;height:500px;position:relative;background:black;margin-left:100px;margin-top:80px;float:left;}
+	.inner{width:140px;height:140px;background:aqua;position:absolute;border-radius:50%;}
+	#i11{margin-left:80px;margin-top:80px;}
+	#i12{margin-left:300px;margin-top:140px;}
+	#i13{margin-left:140px;margin-top:300px;}
+	#i21{margin-left:80px;margin-top:80px;display:none;}
+	#i22{margin-left:300px;margin-top:140px;display:none;}
+	#i23{margin-left:140px;margin-top:300px;display:none;}
+</style>
+</head>
+
+<body>
+    <div class="outer1">
+        <div class="inner" id="i11"></div>
+        <div class="inner" id="i12"></div>
+        <div class="inner" id="i13"></div>
+    </div>
+	<div class="outer2">
+        <div class="inner" id="i21"></div>
+        <div class="inner" id="i22"></div>
+        <div class="inner" id="i23"></div>
+    </div>
+</body>
+</html>
