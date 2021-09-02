@@ -3,36 +3,49 @@
 <html> 
 <head>
   <link rel="stylesheet" href="bootstrap.css">
+  <style>
+  img{width:100%;height:100%;}
+  </style>
   <script src="jquery.js"></script>
   <script src="bootstrap.js"></script>
+  <script src="popper.js"></script>
 </head>
 <body> 
-<div class="container" style="background-color:black;">
-  <div class="row">
-    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"> <img src="1.jpg" width="300" height="200" class="img-fluid"></div>
-    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"> <img src="1.jpg" width="275" height="200" ></div>
-	<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"> <img src="1.jpg" width="250" height="200" ></div>
-	<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"> <img src="1.jpg" width="250" height="200" ></div>
-  </div></div>	
-  <div class="container" style="background-color:black; color:white;">
-  <div class="row">
-    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8"> The .container class provides a responsive container class provides a responsive fixed width containerThe .container class provides a responsive container class provides a responsive fixed width containerThe .container class provides a responsive container class provides a responsive fixed width container.
+<div class="container" style="background-color:black;margin-top:50px;">
+ <div class="row">
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"> <img src="1.jpg" class="img-fluid"></div>
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"> <img src="1.jpg" class="img-fluid" ></div>
+	<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"> <img src="1.jpg" class="img-fluid" ></div>
+	<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"> <img src="1.jpg" class="img-fluid" ></div>
+ </div>
+	
+ 
+ <div class="row" style="color:lightgrey;">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"> 
 	    <div class="row">
-	    <div class="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4"> The .container class provides a responsive container class provides a responsive fixed width container.The .container class provides a responsive container class provides a responsive fixed width container</div>
-	    <div class="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4"> The .container class provides a responsive container class provides a responsive fixed width container. The .container class provides a responsive container class provides a responsive fixed width container</div>
+	        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> <p> The .container class provides a responsive container class provides a responsive fixed width container. The .container class provides a responsive container class provides a responsive fixed width container.</p> </div>
+	        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"> <p> The .container class provides a responsive container class provides a responsive fixed width container. The .container class provides a responsive container class provides a responsive fixed width container. </p> </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"> <p> The .container class provides a responsive container class provides a responsive fixed width container. The .container class provides a responsive container class provides a responsive fixed width container. </p></div>
+				</div>  
+			</div>
 	    </div>
 	</div>
-   	<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">The .container class provides a responsive container class provides a responsive fixed width container. The .container class provides a responsive container class provides a responsive fixed width container The .container class provides a responsive container class provides a responsive fixed width container The .container class provides a responsive container class provides a responsive fixed width containerThe .container class provides a responsive container class provides a responsive fixed width container</div>
-  </div></div>
-<div class="container" style="background-color:black; text-align:center;">
-  <div class="row">
-    <table class="table table-bordered table-stripped table-danger ">
+   	<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"><p>The .container class provides a responsive container class provides a responsive fixed width container. The .container class provides a responsive container class provides a responsive fixed width container. The .container class provides a responsive container class provides a responsive fixed width container The .container class provides a responsive container class provides a responsive fixed width container The .container class provides a responsive container class provides a responsive fixed width containerThe .container class provides a responsive container class provides a responsive fixed width container</p></div>
+ </div>
+
+ <div class="row">
+   <div class="table-responsive">
+    <table class="table table-bordered table-danger ">
 	<thead class="thead-dark">
 	<tr>
 	<th> Sr. No. </th>
 	<th> Name </th>
 	<th> Employee ID</th>
 	<th> Contact No.</th>
+	<th> Location</th>
+	<th> Designation</th>
 	</tr>
 	</thead>
 	<tr>
@@ -40,43 +53,47 @@
 	<td> Sarthak </td>
 	<td> 201</td>
 	<td> 9958624893</td>
+	<td> Pune</td>
+	<td> Manager</td>
 	</tr>
 	<tr>
 	<td> 02</td>
 	<td> Shweta </td>
 	<td> 202</td>
 	<td> 8965478231</td>
+	<td> Mumbai </td>
+	<td> SY. Developer</td>
 	</tr>
 	<tr>
 	<td> 03</td>
 	<td> Mahesh </td>
 	<td> 203</td>
 	<td> 7586123985</td>
+	<td> Nashik </td>
+	<td> Engineer</td>
 	</tr>
 	</table>
-  </div>
-  </div>
- <div class="container" style="background-color:black; color:white">
-    <div class="row">
+	</div>
+ </div>
+ 
+ <div class="row">
 	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"> 
-    <form>
-	<input type="radio" value="yes" class="btn" name="y"> yes
-	<input type="radio" value="no" class="btn" name="y"> no
-	<button type="button" class="btn ">Basic</button>
-  <button type="button" class="btn btn-primary"> Submit</button>
-  <button type="button" class="btn btn-secondary">Reset</button>
-  <button type="button" class="btn btn-success">Clear</button>
-  <button type="button" class="btn btn-info">Click</button>
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-dark">Dark</button>
-  <button type="button" class="btn btn-light">Light</button>
-  <button type="button" class="btn btn-link btn-lg">Link</button>      
-    </form>
+    <div class="btn">
+	<button class="btn ">Basic</button>
+    <button class="btn btn-primary"> Submit</button>
+    <button class="btn btn-secondary">Reset</button>
+    <button class="btn btn-success">Clear</button>
+    <button class="btn btn-info">Click</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-dark">Dark</button>
+    <button class="btn btn-light">Light</button>
+    <button class="btn btn-link btn-lg">Link</button>      
+    </div>
+    </div>
  </div>
- </div>
- </div>
+</div>
                                     
-    </body>
+</body>
 </html>
 
