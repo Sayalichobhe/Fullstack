@@ -1,0 +1,21 @@
+html,
+
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-color:black;
+	color: #797979;
+}
+
+#home{
+    background: url(images/kitchen.jpg)  100% 100%;
+    background-size: cover;
+	height:600px;
+	padding-top:100px;
+	padding-left:100px;
+}
+a{
+	color:yellow;
+}
