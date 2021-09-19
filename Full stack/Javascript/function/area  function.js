@@ -11,7 +11,7 @@
 	 document.write("Area of circle is"+ ac) ; 
 	 document.write("Area of rectangle is"+ ar) ;
 	 document.write("Area of square is"+ as) ;
-	   }
+	 }
 	
-    area();
+    area(); 
 	
